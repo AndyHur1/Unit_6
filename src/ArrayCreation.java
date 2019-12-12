@@ -33,8 +33,21 @@ public class ArrayCreation {
 
     }
     public static String countryData(){
+        String[] countries = {"China", "Egypt", "France", "South Korea", "Germany", "India",
+                "Japan", "Ghana", "Kenya", "Mexico", "United Kingdom", "Burkina Faso", "United States"};
 
-        return "";
+        String[] capitals = {"Beijing", "Cairo", "Paris", "Seoul", "Berlin", "New Delhi",
+                "Tokyo", "Accra", "Nairobi", "Mexico City", "London", "Ouagadougou", "Washington D.C."};
+
+        String[] languages = {"Mandarin", "Arabic", "French", "Korean", "German", "Hindi",
+                "Japanese", "Akuapem Twi", "Swahili", "Spanish", "English", "French", "English"};
+
+        int index_countries = countries.length;
+        int random_cast = (int) (Math.random()*index_countries);
+
+        return "The capital of "+countries[random_cast]+" is "+capitals[random_cast]+" and the primary language is "+
+                languages[random_cast];
+
     }
 
 
