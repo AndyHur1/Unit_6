@@ -29,7 +29,20 @@ public class SelfDivisor {
      * integers >= start that are self-divisors
      */
     public static int[] firstNumSelfDivisors(int start, int num){
-        int []list={1,2};
+        int []list= new int[num];
+        int array_index = 0;
+        while (array_index<num){
+            if (isSelfDivisor(start)==true){
+                list[array_index]=start;
+                array_index++;
+            }
+            start++;
+        }
+
+
+
+
+
         return list;
     }
 

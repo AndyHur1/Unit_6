@@ -43,7 +43,18 @@ public class TraverseArrays {
     }
     public static int[] zeroMax(int[] original){
 
+        for (int a = 0; a <= original.length-1;a++){
+            if (original[a] == 0){
+                for (int a_2=a;a_2< original.length-1;a_2++){
+                    if (original[a_2]<original[a_2+1]&&original[a_2+1]%2!=0){
+                        original[a_2]=original[a_2+1];
+                    }
+                }
+            }
+        }
+        return original;
     }
+
 
 
 }
