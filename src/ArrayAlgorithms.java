@@ -36,10 +36,11 @@ public class ArrayAlgorithms {
                     result=false;
                 }
             }
-            return result;
+
 
         }
 
+        return result;
     }
 
 }
